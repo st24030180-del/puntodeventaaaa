@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distrito 11 - Punto de Venta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div>
+        <h1>DISTRITO <span>11</span></h1>
+        <p>Punto de Venta</p>
+    </div>
+    <div id="fecha"></div>
+</header>
+
+<nav class="nav">
+    <button class="nav-btn active" onclick="mostrarSeccion('venta', this)">Venta</button>
+    <button class="nav-btn" onclick="mostrarSeccion('pedidos', this)">Pedidos</button>
+    <button class="nav-btn" onclick="mostrarSeccion('productos', this)">Productos</button>
+</nav>
+
+<main>
+
+<section id="venta" class="seccion activa">
+    <div class="venta-grid">
+
+        <div class="menu-panel">
+            <div class="section-title">
+                <h2>Menú</h2>
+            </div>
+
+            <div id="categorias" class="categorias"></div>
+
+            <div id="productosVenta" class="productos-grid"></div>
+        </div>
+
+        <div class="pedido-panel">
+            <div class="section-title">
+                <h2>Pedido</h2>
+            </div>
+
+            <label>Mesa</label>
+            <select id="mesa">
+                <option value="">Seleccionar mesa</option>
+                <option>Mesa 1</option>
+                <option>Mesa 2</option>
+                <option>Mesa 3</option>
+                <option>Mesa 4</option>
+                <option>Mesa 5</option>
+                <option>Mesa 6</option>
+                <option>Mesa 7</option>
+                <option>Mesa 8</option>
+                <option>Mesa 9</option>
+                <option>Mesa 10</option>
+                <option>Mesa 11</option>
+                <option>Mesa 12</option>
+                <option>Para llevar</option>
+            </select>
+
+            <div id="carrito" class="carrito"></div>
+
+            <div class="total">
+                <span>Total</span>
+                <strong id="total">$0.00</strong>
+            </div>
+
+            <button class="btn-principal" onclick="guardarPedido()">
+                GUARDAR PEDIDO
+            </button>
+
+            <button class="btn-secundario" onclick="limpiarPedido()">
+                LIMPIAR
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<section id="pedidos" class="seccion">
+    <div class="section-title">
+        <h2>Pedidos</h2>
+        <strong id="ventasTotales">$0.00</strong>
+    </div>
+
+    <div id="listaPedidos" class="pedidos-grid"></div>
+</section>
+
+<section id="productos" class="seccion">
+    <div class="section-title">
+        <h2>Administrar productos</h2>
+    </div>
+
+    <div class="form-producto">
+        <input type="hidden" id="productoId">
+
+        <input id="nombreProducto" type="text" placeholder="Nombre del producto">
+
+        <input id="precioProducto" type="number" step="0.01" placeholder="Precio">
+
+        <input id="categoriaProducto" type="text" placeholder="Categoría">
+
+        <button class="btn-principal" onclick="guardarProducto()">
+            GUARDAR
+        </button>
+
+        <button class="btn-secundario" onclick="cancelarEdicion()">
+            CANCELAR
+        </button>
+    </div>
+
+    <div id="listaProductosAdmin" class="admin-productos"></div>
+</section>
+
+</main>
+
+<script src="./localStorage.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
+```
