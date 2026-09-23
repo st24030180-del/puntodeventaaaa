@@ -2,11 +2,11 @@ const CLAVE_PRODUCTOS = "distrito11_productos";
 const CLAVE_PEDIDOS = "distrito11_pedidos";
 
 const productosIniciales = [
-    { id: 1, nombre: "Hamburguesa", precio: 90, categoria: "Comida" },
-    { id: 2, nombre: "Hamburguesa Doble", precio: 120, categoria: "Comida" },
-    { id: 3, nombre: "Alitas", precio: 120, categoria: "Comida" },
-    { id: 4, nombre: "Papas", precio: 50, categoria: "Complementos" },
-    { id: 5, nombre: "Papas con Queso", precio: 65, categoria: "Complementos" },
+    { id: 1, nombre: "Ron", precio: 60, categoria: "Bebidas" },
+    { id: 2, nombre: "Limonada Natural", precio: 50, categoria: "Bebidas" },
+    { id: 3, nombre: "Limonada Mineral", precio: 60, categoria: "Bebidas" },
+    { id: 4, nombre: "Margaritas", precio: 80, categoria: "Bbebidas" },
+    { id: 5, nombre: "Vamoiros", precio: 90, categoria: "Bebidas" },
     { id: 6, nombre: "Refresco", precio: 30, categoria: "Bebidas" },
     { id: 7, nombre: "Agua", precio: 25, categoria: "Bebidas" }
 ];
