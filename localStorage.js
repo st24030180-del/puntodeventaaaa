@@ -5,7 +5,7 @@ const productosIniciales = [
     { id: 1, nombre: "Ron", precio: 60, categoria: "Bebidas" },
     { id: 2, nombre: "Limonada Natural", precio: 50, categoria: "Bebidas" },
     { id: 3, nombre: "Limonada Mineral", precio: 60, categoria: "Bebidas" },
-    { id: 4, nombre: "Margaritas", precio: 80, categoria: "Bbebidas" },
+    { id: 4, nombre: "Margaritas", precio: 80, categoria: "Bebidas" },
     { id: 5, nombre: "Vamoiros", precio: 90, categoria: "Bebidas" },
     { id: 6, nombre: "Refresco", precio: 30, categoria: "Bebidas" },
     { id: 7, nombre: "Agua", precio: 25, categoria: "Bebidas" }
